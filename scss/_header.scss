@@ -1,0 +1,30 @@
+@import "./_style.scss";
+
+.header {
+    padding: 1.5rem 0;
+
+    &__ul {
+        @include flx(center);
+    }
+
+    &__li {
+        margin: 0 2rem;
+
+        &:not(:last-child)::after {
+            content: "|";
+            padding-left: 3rem;
+            color: $nav-font-color-dimmed;
+        }
+    }
+
+    &__link, &__li {
+        text-decoration: none;
+        color: $nav-font-color;
+        font-size: 1rem;
+
+        &:hover, &:active, &:focus {
+            text-decoration: none;
+            color: $nav-font-color;
+        }
+    }
+}

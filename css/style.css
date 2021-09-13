@@ -1,0 +1,349 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 62.5%;
+  background-color: rgba(231, 227, 227, 0.418);
+}
+
+.header {
+  padding: 1.5rem 0;
+}
+.header__ul {
+  display: flex;
+  justify-content: center;
+}
+.header__li {
+  margin: 0 2rem;
+}
+.header__li:not(:last-child)::after {
+  content: "|";
+  padding-left: 3rem;
+  color: rgba(197, 186, 186, 0.424);
+}
+.header__link, .header__li {
+  text-decoration: none;
+  color: #211717;
+  font-size: 1rem;
+}
+.header__link:hover, .header__link:active, .header__link:focus, .header__li:hover, .header__li:active, .header__li:focus {
+  text-decoration: none;
+  color: #211717;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 62.5%;
+  background-color: rgba(231, 227, 227, 0.418);
+}
+
+.banner {
+  padding: 0 10rem;
+  height: 90vh;
+  text-align: center;
+  width: auto;
+}
+@media screen and (max-width: 376px) {
+  .banner {
+    height: auto;
+    width: auto;
+    padding: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner {
+    padding: 1rem 2rem;
+    height: auto;
+  }
+}
+.banner__title {
+  visibility: hidden;
+}
+.banner__logo {
+  width: 45%;
+  padding: 2.5rem 0;
+}
+@media screen and (max-width: 376px) {
+  .banner__logo {
+    width: 100%;
+    height: auto;
+  }
+}
+@media screen and (max-width: 768px) {
+  .banner__logo {
+    width: 100%;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 62.5%;
+  background-color: rgba(231, 227, 227, 0.418);
+}
+
+.contact {
+  text-align: center;
+  padding-bottom: 5rem;
+  padding-top: 2rem;
+  background-color: #98413e;
+}
+.contact__container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.contact__title {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #f3f2f2;
+}
+.contact__phone, .contact__email {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+}
+@media screen and (max-width: 376px) {
+  .contact__phone, .contact__email {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+.contact__phone__title, .contact__email__title {
+  font-size: 1.2rem;
+  font-weight: 590;
+  margin-bottom: 0.5rem;
+  color: #f3f2f2;
+}
+.contact__phone a, .contact__email a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #f3f2f2;
+  margin: 0 0.5rem 0.5rem 0.5rem;
+}
+.contact__phone a:hover, .contact__phone a:active, .contact__phone a:focus, .contact__email a:hover, .contact__email a:active, .contact__email a:focus {
+  text-decoration: none;
+  color: #f3f2f2;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 62.5%;
+  background-color: rgba(231, 227, 227, 0.418);
+}
+
+.location {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 10rem;
+}
+@media screen and (max-width: 376px) {
+  .location {
+    padding: 2rem 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .location {
+    padding: 2rem 1rem;
+  }
+}
+.location__title {
+  font-size: 2rem;
+  font-weight: 500;
+}
+.location__address {
+  font-size: 1.2rem;
+  padding: 1.5rem;
+  text-align: center;
+}
+.location__map {
+  width: 100%;
+  height: 50vh;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 62.5%;
+  background-color: rgba(231, 227, 227, 0.418);
+}
+
+.contabilidade {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.contabilidade__title {
+  font-size: 2rem;
+  margin: 1rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+.contabilidade__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10rem;
+  width: auto;
+}
+.contabilidade__container__block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: max(30%, 200px);
+  height: max(40vh, 200px);
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 8px;
+}
+.contabilidade__container__block__subtitle {
+  color: #000;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.contabilidade__container__block__text {
+  color: #000;
+  font-size: 1rem;
+  padding: 0.6rem;
+  text-align: left;
+}
+
+.teste {
+  background-color: rgba(202, 194, 194, 0.712);
+  width: 95%;
+  height: 90%;
+}
+
+.contabil {
+  background: linear-gradient(135deg, #F8F8F8 50%, #EEEEEE 50%);
+}
+
+.fiscal {
+  background-image: url("../assets/fiscal.jpg");
+}
+
+.folha {
+  background-image: url("../assets/folha.jpg");
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 62.5%;
+  background-color: rgba(231, 227, 227, 0.418);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 62.5%;
+  background-color: rgba(231, 227, 227, 0.418);
+}
+
+.certificado {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+}
+.certificado__title {
+  font-size: 2rem;
+  margin: 2rem 0;
+  font-weight: 500;
+  text-align: center;
+}
+.certificado__container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 10rem;
+  width: auto;
+}
+.certificado__container__block {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: max(30%, 200px);
+  height: max(60vh, 400px);
+  margin-bottom: 1.5rem;
+  margin-right: 1.5rem;
+  border: 2px solid #4b3c3a;
+  border-radius: 8px;
+}
+.certificado__container__block__subtitle {
+  color: #4b3c3a;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.certificado__container__block__text {
+  text-align: center;
+  color: #4b3c3a;
+  font-size: 1.5rem;
+  padding: 0.6rem;
+}
+.certificado__container__block__text--small {
+  font-size: 0.8rem;
+}
+.certificado__container__block__price {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  font-weight: bold;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Hind", sans-serif;
+  font-size: 62.5%;
+  background-color: rgba(231, 227, 227, 0.418);
+}
+
+.about {
+  text-align: center;
+  padding: 2rem 10rem;
+}
+.about__title {
+  font-size: 2rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
+}
+.about__text {
+  font-size: 1.5rem;
+}
+
+/*# sourceMappingURL=style.css.map */

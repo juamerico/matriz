@@ -1,0 +1,33 @@
+@import "./_style.scss";
+
+.banner {
+    @include phone {
+        height: auto;
+        width: auto;
+        padding: 1rem;
+    }
+    @include tablet {
+        padding: 1rem 2rem;
+        height: auto;
+    }
+    padding: 0 10rem;
+    height: 90vh;
+    text-align: center;
+    width: auto;
+
+    &__title {
+        visibility: hidden;
+    }
+
+    &__logo {
+        @include phone {
+            width: 100%;
+            height: auto;
+        }
+        @include tablet {
+            width: 100%;
+        }
+        width: 45%;
+        padding: 2.5rem 0;
+    }
+}

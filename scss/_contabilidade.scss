@@ -1,0 +1,82 @@
+@import "./_style.scss";
+
+.contabilidade {
+    @include flx(center);
+    flex-direction: column;
+    width: 100%;
+    
+    &__title {
+        font-size: 2rem;
+        margin: 1rem 0;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    &__container {
+        @include flx(space-between);
+        flex-wrap: wrap;
+        padding: 0 10rem;
+        width: auto;
+
+        &__block {
+            @include flx(center);
+            flex-direction: column;
+            align-items: center;
+        
+            width: max(30%, 200px);
+            height: max(40vh, 200px);
+            margin-bottom: 1.5rem;
+            margin-right: 1.5rem;
+        
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        
+            // border: 2px solid $matriz-black;
+            border-radius: 8px;
+        
+            &__subtitle {
+                color: #000;
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+        
+            &__text {
+                color: #000;
+                font-size: 1rem;
+                padding: 0.6rem;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.teste {
+    background-color: rgba(202, 194, 194, 0.712);
+    width: 95%;
+    height: 90%;
+}
+
+.contabil {
+    background: linear-gradient(135deg, #F8F8F8 50%, #EEEEEE 50%);;
+}
+
+.fiscal {
+    background-image: url("../assets/fiscal.jpg");
+}
+
+.folha {
+    background-image: url("../assets/folha.jpg");
+}
+
+// .irpf {
+//     background-image: url("../assets/irpf.jpg");
+// }
+
+// .abertura {
+//     background-image: url("../assets/abertura.jpg");
+// }
+
+// .rural {
+//     background-image: url("../assets/rural.jpg");
+// }
