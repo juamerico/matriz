@@ -1,6 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/matriz/public_html/
+    - export DEPLOYPATH=/home2/matriz/repositories/matriz/
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp style.css $DEPLOYPATH
+    - /bin/cp css/style.css $DEPLOYPATH
