@@ -49,7 +49,7 @@ body {
   text-align: center;
   width: auto;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
   .banner {
     height: auto;
     width: auto;
@@ -69,7 +69,7 @@ body {
   width: 45%;
   padding: 2.5rem 0;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
   .banner__logo {
     width: 100%;
     height: auto;
@@ -95,7 +95,7 @@ body {
   text-align: center;
   padding-bottom: 5rem;
   padding-top: 2rem;
-  background-color: #98413e;
+  background: linear-gradient(135deg, #98413e 50%, #793735 100%);
 }
 .contact__container {
   display: flex;
@@ -114,7 +114,7 @@ body {
   align-items: center;
   padding: 1.5rem 1.5rem 0 1.5rem;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
   .contact__phone, .contact__email {
     display: flex;
     justify-content: center;
@@ -122,20 +122,40 @@ body {
   }
 }
 .contact__phone__title, .contact__email__title {
-  font-size: 1.2rem;
-  font-weight: 590;
-  margin-bottom: 0.5rem;
-  color: #f3f2f2;
+  width: 1.2rem;
 }
-.contact__phone a, .contact__email a {
+.contact__phone__number, .contact__phone__address, .contact__email__number, .contact__email__address {
   font-size: 1.2rem;
   text-decoration: none;
   color: #f3f2f2;
-  margin: 0 0.5rem 0.5rem 0.5rem;
+  margin-left: 0.5rem;
 }
-.contact__phone a:hover, .contact__phone a:active, .contact__phone a:focus, .contact__email a:hover, .contact__email a:active, .contact__email a:focus {
+@media screen and (max-width: 450px) {
+  .contact__phone__number, .contact__phone__address, .contact__email__number, .contact__email__address {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact__phone__number, .contact__phone__address, .contact__email__number, .contact__email__address {
+    font-size: 1rem;
+  }
+}
+.contact__phone__number:hover, .contact__phone__number:active, .contact__phone__number:focus, .contact__phone__address:hover, .contact__phone__address:active, .contact__phone__address:focus, .contact__email__number:hover, .contact__email__number:active, .contact__email__number:focus, .contact__email__address:hover, .contact__email__address:active, .contact__email__address:focus {
   text-decoration: none;
   color: #f3f2f2;
+}
+.contact__social {
+  margin-top: 1.5rem;
+}
+.contact__social__icon {
+  cursor: pointer;
+  width: 2rem;
+  margin: 0 0.5rem;
+  transition: 0.5s;
+}
+.contact__social__icon:hover {
+  transform: scale(1.05);
+  fill: #98413e;
 }
 
 html {
@@ -155,7 +175,7 @@ body {
   align-items: center;
   padding: 2rem 10rem;
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 450px) {
   .location {
     padding: 2rem 1rem;
   }
