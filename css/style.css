@@ -157,6 +157,12 @@ body {
   transform: scale(1.05);
   fill: #98413e;
 }
+.contact__social > a {
+  text-decoration: none;
+}
+.contact__social > a:hover, .contact__social > a:active, .contact__social > a:focus {
+  text-decoration: none;
+}
 
 html {
   scroll-behavior: smooth;
